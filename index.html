@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="png" href="images/icon/favicon.png">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
+	<title>LearnEd</title>
+	<meta name="desciption" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script>
+		$(window).on('scroll', function(){
+  			if($(window).scrollTop()){
+  			  $('nav').addClass('black');
+ 			 }else {
+ 		   $('nav').removeClass('black');
+ 		 }
+		})
+	</script>
+</head>
+<body>
+<!-- Navigation Bar -->
+	<header id="header">
+		<nav>
+			<div class="logo" ><b>Kunal Garg</b></div>
+			<ul>
+				<li><a class="active" href="">Home</a></li>
+				<li><a href="#portfolio_section">Portfolio</a></li>
+			
+			</ul>
+			<div class="srch"><input type="text" class="search" placeholder="Search here..."><img src="images/icon/search.png" alt="search" onclick=slide()></div>
+			<a class="get-started" href="https://github.com/kunalga/Predict-The-Stock-Market-With-Machine-Learning/blob/main/Nifty50%20Predict%20The%20Stock%20Market.ipynb">GITHUB </a>
+			<img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+		</nav>
+		<div class="head-container">
+			<div class="quote">
+				<p>Predict The Stock Market With Machine Learning And Python</p>
+				<h5>Utilize Python and machine learning for stock market prediction, leveraging data analysis and algorithmic models for informed investment decisions</h5>
+				<div class="play">
+					<img src="images/icon/computer-courses.png" alt="play"><span><a href="https://github.com/kunalga/Predict-The-Stock-Market-With-Machine-Learning/blob/main/Nifty50%20Predict%20The%20Stock%20Market.ipynb" target="_blank">Source Link </a></span>
+				</div>
+			</div>
+			<div class="svg-image">
+				<img src="images/extra/svg1.jpg" alt="svg">
+			</div>
+		</div>
+		<div class="side-menu" id="side-menu">
+			<div class="close" onclick="sideMenu(1)"><img src="images/icon/close.png" alt=""></div>
+			<div class="user">
+				
+				<p>Kunal Garg</p>
+			</div>
+			<ul>
+				<li><a href="https://www.linkedin.com/in/kunal-garg-codemyway/">About</a></li>
+				<li><a href="#portfolio_section">Portfolio</a></li>
+
+			</ul>
+		</div>
+	</header>
+
+
+	<!-- ABOUT -->
+	<div class="diffSection" id="about_section">
+		<center><p style="font-size: 50px; padding: 100px">About</p></center>
+		<div class="about-content">
+			<div class="side-image">
+				<img class="sideImage" src="images/extra/e3.jpg">
+			</div>
+			<div class="side-text">
+				<h2>What is the Stock Market?</h2>
+					<p>A stock market is a public market where you can buy and sell shares for publicly listed companies. The stocks, also known as equities, represent ownership in the company. The stock exchange is the mediator that allows the buying and selling of shares.</p>
+				<br>
+				</div>
+				<br>
+			</div>
+	</div>
+
+             <div style="margin: 20; padding: 2%;">
+                  <h2>Stock Price Prediction</h2>
+				  <p>Stock Price Prediction using machine learning helps you discover the future value of company stock and other financial assets traded on an exchange. The entire idea of predicting stock prices is to gain significant profits. Predicting how the stock market will perform is a hard task to do. There are other factors involved in the prediction, such as physical and psychological factors, rational and irrational behavior, and so on. All these factors combine to make share prices dynamic and volatile. This makes it very difficult to predict stock prices with high accuracy. </p>
+				</div>
+				
+				<div style="margin: 20; padding: 2%;">
+					<h2>Understanding Long Short Term Memory Network	</h2>
+					<p>Here, you will use a Long Short Term Memory Network (LSTM) for building your model to predict the stock prices of Google.
+
+					</p><p>LTSMs are a type of Recurrent Neural Network for learning long-term dependencies. It is commonly used for processing and predicting time-series data. </p>  
+					<img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/LSTM.PNG " alt="" style="align-items: center; width: 100%; height: auto; ">
+					<br>
+					<p>
+						From the image on the top, you can see LSTMs have a chain-like structure. General RNNs have a single neural network layer. LSTMs, on the other hand, have four interacting layers communicating extraordinarily.
+					</p>
+					<br>
+			<h2>Linear Regression in Machine Learning</h2>
+			<p>
+				Linear regression is one of the easiest and most popular Machine Learning algorithms. It is a statistical method that is used for predictive analysis. Linear regression makes predictions for continuous/real or numeric variables such as sales, salary, age, product price, etc.
+			</p>
+			<p>Linear regression algorithm shows a linear relationship between a dependent (y) and one or more independent (y) variables, hence called as linear regression. Since linear regression shows the linear relationship, which means it finds how the value of the dependent variable is changing according to the value of the independent variable.</p>
+		<p>The linear regression model provides a sloped straight line representing the relationship between the variables. Consider the below image:</p>
+		<img src="https://static.javatpoint.com/tutorial/machine-learning/images/linear-regression-in-machine-learning.png" alt="">
+		<h2>What is Machine Learning?
+		</h2>
+		<p>Machine Learning is a branch of artificial intelligence that develops algorithms by learning the hidden patterns of the datasets used it to make predictions on new similar type data, without being explicitly programmed for each task.
+			
+		</p>
+	</div >
+	<div  style="padding: 2px; margin: 20px;">
+	<h2>Nifty50 Stock Price Prediction Using machine learning with Python
+	</h2>
+	<h2>1. Import the Libraries.</h2>
+	<img src="images/extra/lib.png" alt="" width="100%" height="about-content">
+	<br>
+    <h2>2. Load the Dataset.</h2>
+	<img src="images/extra/Load.png" alt="" width="100%" height="about-content">
+	<br>
+	<h2>3.plot data set</h2>
+	<img src="images/extra/plot.png" alt="" width="100%" height="about-content">
+	<br>
+	<h2>4. Use the Open Stock Price Column to Train Your Model</h2>
+	<img src="images/extra/col.png" alt="" width="100%" height="about-content">
+<h2>5. Normalizing the Dataset.</h2>
+<br>
+<img src="images/extra/train.png" alt="" width="100%" height="about-content">
+
+<h2>6.Creating X_train and y_train Dataset  </h2>
+<br>
+<img src="images/extra/train.png" alt="" width="100%" height="about-content">
+<br>
+<h2>7.precision score
+</h2>
+<img src="images/extra/prec.png" alt="" width="100%" height="about-content">
+<br>
+<h2>8.Reshape and Fitting the Data</h2>
+<img src="images/extra/Improve .png" alt="" width="100%" height="about-content">
+
+<h2>9.Improved precision_score</h2>
+<img src="images/extra/data.png" alt="" width="100%" height="about-content">
+<h2>10.predictions</h2>
+<img src="images/extra/pr.png" alt="" width="100%" height="about-content">
+
+
+
+
+
+</div>
+
+	
+	<!-- Some Popular Subjects -->
+		<div class="title">
+			<span>Learning Resources By Kunal Garg</span>
+		</div>
+		<br><br>
+		<div class="course">
+			<center><div class="cbox">
+					<div class="det"><a href="https://cumailin-my.sharepoint.com/:p:/r/personal/21bnm2130_cuchd_in/_layouts/15/doc2.aspx?sourcedoc=%7BE86AA1B8-766C-4B4A-A16D-DE9A2C2583A8%7D&file=Introduction-to-the-Indian-Stock-Market.pptx&action=edit&mobileredirect=true&ct=1707923688176&wdOrigin=OFFICECOM-WEB.START.UPLOAD&cid=3c773cf0-6271-4cc4-b41d-2b1e5682b662&wdPreviousSessionSrc=HarmonyWeb&wdPreviousSession=9ea590ca-809a-49b2-9413-17642f1661e1"><img src="images/courses/d1.png">India Stock Market </a></div>
+			<div class="det"><a href="https://cumailin-my.sharepoint.com/:p:/g/personal/21bnm2130_cuchd_in/EWM6Pz1K5LlKoFkhrxZFK_ABSOuOI_XX0Jjzw8rt_t1UDg?e=erj1se"><img src="images/courses/paper.png">Machine Learning </a></div>
+			
+			</div></center>
+			
+		</div>
+		<br>
+	
+		
+	<!-- FOOTER -->
+	<footer>
+		<div class="footer-container">
+			<div class="left-col">
+				<h2>Kunal Garg</h2>
+				<div class="logo"></div>
+				<div class="social-media">
+				
+					<a href="https://www.youtube.com/channel/UCDA-5pBN8m0BHIf6TQ0hZwQ"><img src="images/icon\ytube.png"></a>
+					<a href="https://www.linkedin.com/in/kunal-garg-codemyway/"><img src="images/icon\linkedin.png"></a>
+				</div><br><br>
+				<p class="rights-text">Copyright © 2024 Created By Kunal Garg All Rights Reserved.</p>
+				<br><p><img src="images/icon/location.png"> Chandigarh University<br>
+				<p><img src="images/icon/phone.png">+91 8076378769<br><img src="images/icon/mail.png">&nbsp; kunalgarg91189@gmail.com</p>
+			</div>
+			<div class="right-col">
+				
+				<div class="border"></div><br>
+				
+				
+				
+			</form>
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>
